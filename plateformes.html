@@ -13,23 +13,17 @@
 *{box-sizing:border-box}
 html,body{margin:0;background:#1C1418;color:#FBEFF3;font-family:'Manrope',system-ui,-apple-system,sans-serif}
 .page{max-width:480px;margin:0 auto;min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
-.hero{position:relative;height:58vh;height:58svh;min-height:360px;max-height:620px}
+.hero{position:relative;flex:1 0 auto;height:58vh;height:58svh;min-height:360px;max-height:760px}
 .hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
 .scrim{position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(to bottom,rgba(28,20,24,0),rgba(28,20,24,.85) 60%,#1C1418)}
 h1{position:absolute;left:0;right:0;bottom:16px;margin:0;text-align:center;font-family:'Limelight',serif;font-weight:400;font-size:clamp(34px,11.5vw,52px);line-height:1;letter-spacing:.02em;white-space:nowrap}
 .links{margin-top:auto;padding:16px 16px calc(28px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:12px}
 a{text-decoration:none;color:#FFFFFF;transition:transform .15s ease}
 a:active{transform:scale(.98)}
-.big{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:76px;padding:12px 16px 12px 12px;border-radius:22px}
 .of{background:#008CCF}
-.tg{background:#229ED9;min-height:68px;padding:10px 16px 10px 12px;border-radius:20px}
-.l{display:flex;align-items:center;gap:14px}
 .t{font-size:21px;font-weight:800}
-.tg .t{font-size:19px}
 .ico{display:block;width:48px;height:48px;border-radius:999px;flex-shrink:0}
 .of .ico{background:#FFFFFF;object-fit:contain}
-.tg .ico{width:40px;height:40px;box-shadow:0 0 0 2px #FFFFFF}
-.pill{padding:6px 11px;border-radius:999px;background:#FFFFFF;font-size:12px;font-weight:800;letter-spacing:.08em}
 .card{display:flex;flex-direction:column;justify-content:center;gap:10px;min-height:96px;padding:12px 14px;border-radius:20px}
 .card .top{display:flex;align-items:center;gap:10px}
 .card .ico{width:40px;height:40px;background:#FFFFFF;object-fit:contain}
@@ -38,7 +32,6 @@ a:active{transform:scale(.98)}
 @media (max-width:374px){.card{padding:12px}.card .t{font-size:17px}.card .d{font-size:12px}}
 .vip{background:#0F1A24;border:2px solid #008CCF}
 .vip .d{color:#CFE9F7}
-.of .pill{color:#006A9E}.tg .pill{color:#17739F}
 .duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .small{display:flex;align-items:center;gap:10px;min-height:68px;padding:10px 12px;border-radius:20px}
 .small .ico{width:40px;height:40px;object-fit:cover}
@@ -77,10 +70,6 @@ a:active{transform:scale(.98)}
 <span class="n"><span class="t">REVEAL</span><span class="s">Gratuit</span></span>
 </a>
 </div>
-<a class="big tg" href="https://t.me/+XzF5ZCpvziA2MjFk">
-<span class="l"><img class="ico" src="logo-telegram.png" alt=""><span class="t">Mon Telegram</span></span>
-<span class="pill">GRATUIT</span>
-</a>
 </nav>
 </main>
 <script>
